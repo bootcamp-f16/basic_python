@@ -397,3 +397,17 @@ has-a
 A phrase to say that something is composed of other things or has a trait, as in "a salmon has-a mouth."
 ```
 
+
+###Basic Classes
+```python
+class Foo:
+    def __init__(self, val):
+        self.val = val
+    def printVal(self):
+        print(self.val)
+        
+obj1 = Foo(1)
+obj2 = Foo(2)
+print(obj1.printVal())
+print(obj2.printVal())
+```
