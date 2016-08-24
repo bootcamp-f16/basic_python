@@ -196,3 +196,204 @@ not (False and False)	| True
 0 == 1	| False
 0 == 0	| True
 
+### Truthiness Exercises/Examples
+```python
+True and True
+False and True
+1 == 1 and 2 == 1
+"test" == "test"
+1 == 1 or 2 != 1
+True and 1 == 1
+False and 0 != 0
+True or 1 == 1
+"test" == "testing"
+1 != 0 and 2 == 1
+"test" != "testing"
+"test" == 1
+not (True and False)
+not (1 == 1 and 0 != 1)
+not (10 == 1 or 1000 == 1000)
+not (1 != 10 or 3 == 4)
+not ("testing" == "testing" and "Zed" == "Cool Guy")
+1 == 1 and (not ("testing" == 1 or 1 == 0))
+"chunky" == "bacon" and (not (3 == 4 or 3 == 3))
+3 == 3 and (not ("testing" == "testing" or "Python" == "Fun"))
+```
+
+### Basic Ifs
+```python
+people = 20
+cats = 30
+dogs = 15
+
+if people < cats:
+    print "Too many cats! The world is doomed!"
+
+if people > cats:
+    print "Not many cats! The world is saved!"
+
+if people < dogs:
+    print "The world is drooled on!"
+
+if people > dogs:
+    print "The world is dry!"
+
+dogs += 5
+
+if people >= dogs:
+    print "People are greater than or equal to dogs."
+
+if people <= dogs:
+    print "People are less than or equal to dogs."
+
+if people == dogs:
+    print "People are dogs."
+```
+
+### If & Elif
+```python
+people = 30
+cars = 40
+trucks = 15
+
+
+if cars > people:
+    print "We should take the cars."
+elif cars < people:
+    print "We should not take the cars."
+else:
+    print "We can't decide."
+
+if trucks > cars:
+    print "That's too many trucks."
+elif trucks < cars:
+    print "Maybe we could take the trucks."
+else:
+    print "We still can't decide."
+
+if people > trucks:
+    print "Alright, let's just take the trucks."
+else:
+    print "Fine, let's stay home then."
+```
+
+###Lists & Loops
+```python
+the_count = [1, 2, 3, 4, 5]
+for number in the_count:
+    print("This is count {}".format(number))
+    
+new_list = []
+for i in range(0, 6):
+    print("Adding {} to the list.".format(i))
+    # append is a function that lists understand
+    new_list.append(i)
+
+print(new_list)
+```
+
+
+###While Loops
+```python
+
+i = 0
+numbers = []
+
+while i < 6:
+    print("At the top i is {}".format(i))
+    numbers.append(i)
+
+    i = i + 1
+    print "Numbers now: ", numbers
+    print("At the bottom i is {}".format(i))
+
+
+print "The numbers: "
+
+for num in numbers:
+    print num
+```
+
+###Manipulating Lists
+```python
+ten_things = "Apples Oranges Crows Telephone Light Sugar"
+
+print "Wait there are not 10 things in that list. Let's fix that."
+
+stuff = ten_things.split(' ')
+more_stuff = ["Day", "Night", "Song", "Frisbee", "Corn", "Banana", "Girl", "Boy"]
+
+while len(stuff) != 10:
+    next_one = more_stuff.pop()
+    print "Adding: ", next_one
+    stuff.append(next_one)
+    print("There are {} items now.".format(len(stuff))
+
+print "There we go: ", stuff
+
+print "Let's do some things with stuff."
+
+print stuff[1]
+print stuff[-1] # whoa! fancy
+print stuff.pop()
+print ' '.join(stuff) # what? cool!
+print '#'.join(stuff[3:5]) # super stellar!
+```
+
+### Dictionaries
+```python
+stuff = {'name': 'Zed', 'age': 39, 'height': 6 * 12 + 2}
+print stuff['name']
+print stuff['age']
+print stuff['height']
+stuff['city'] = "San Francisco"
+print stuff['city']
+stuff[1] = "Wow"
+print stuff
+del stuff['city']
+print stuff
+```
+
+
+###Learning to Speak Object Oriented
+```
+class
+Tell Python to make a new type of thing.
+```
+```
+object
+Two meanings: the most basic type of thing, and any instance of some thing.
+```
+```
+instance
+What you get when you tell Python to create a class.
+```
+```
+def
+How you define a function inside a class.
+```
+```
+self
+Inside the functions in a class, self is a variable for the instance/object being accessed.
+```
+```
+inheritance
+The concept that one class can inherit traits from another class, much like you and your parents.
+```
+```
+composition
+The concept that a class can be composed of other classes as parts, much like how a car has wheels.
+```
+```
+attribute
+A property classes have that are from composition and are usually variables.
+```
+```
+is-a
+A phrase to say that something inherits from another, as in a "salmon" is-a "fish."
+```
+```
+has-a
+A phrase to say that something is composed of other things or has a trait, as in "a salmon has-a mouth."
+```
+
