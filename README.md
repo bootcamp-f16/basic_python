@@ -25,8 +25,8 @@ print "Hello World!"
 name = 'Zed A. Shaw'
 height = 74 # inches
 
-print "He's %d inches tall." % height
-print "Let's talk about %s." % name
+print "He's %d inches tall." % height # Old
+print "Let's talk about %s." % name   # Old
 print("His name is {} and his height is {}".format(name, height))
 ```
 
@@ -44,14 +44,14 @@ def print_none():
     print "I got nothin'."
     
 def print_one(arg1):
-    print "arg1: %r" % arg1
+    print("arg1: {}".format(arg1))
     
 def print_two(arg1, arg2):
-    print "arg1: %r, arg2: %r" % (arg1, arg2)
+    print("arg1: {}, arg2: {}".format(arg1, arg2))
 
 def print_two_again(*args):
     arg1, arg2 = args
-    print "arg1: %r, arg2: %r" % (arg1, arg2)
+    print("arg1: {}, arg2: {}".format(arg1, arg2))
 
 print_none()
 print_one("First!")
