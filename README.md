@@ -340,6 +340,40 @@ print ' '.join(stuff) # what? cool!
 print '#'.join(stuff[3:5]) # super stellar!
 ```
 
+###Slicing a List
+```python
+word = 'Python'
+word[0]  # character in position 0
+'P'
+
+word[5]  # character in position 5
+'n'
+
+word[-1]
+'n'
+
+word[0:2]
+'Py'
+
+word[2:5]
+'tho'
+
+word[:2]  
+'Py'
+
+word[4:]
+'on'
+
+word[-2:]
+'on'
+
+word[::1]
+'Python'
+
+word[::-1]
+'nohtyP'
+```
+
 ### Dictionaries
 ```python
 stuff = {'name': 'Zed', 'age': 39, 'height': 6 * 12 + 2}
