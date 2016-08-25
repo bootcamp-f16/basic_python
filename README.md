@@ -340,7 +340,7 @@ print ' '.join(stuff) # what? cool!
 print '#'.join(stuff[3:5]) # super stellar!
 ```
 
-###Slicing a List
+###Slice
 ```python
 word = 'Python'
 word[0]  # character in position 0
