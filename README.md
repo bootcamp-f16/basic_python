@@ -388,6 +388,13 @@ del stuff['city']
 print stuff
 ```
 
+###Tuples
+```python
+ t = 12345, 54321, 'hello!'
+ t[0] # 12345
+ t # (12345, 54321, 'hello!')
+ t[0] = 88888 # ERROR
+```
 
 ###Learning to Speak Object Oriented
 ```
