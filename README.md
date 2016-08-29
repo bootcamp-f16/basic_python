@@ -31,7 +31,7 @@ print("His name is {} and his height is {}".format(name, height))
 ```
 
 
-###Iput
+###Input
 ```python
 name = input("What is your name?" )
 print(name)
